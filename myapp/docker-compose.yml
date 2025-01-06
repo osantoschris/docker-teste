@@ -1,7 +1,7 @@
 version: '3.8'
 
 services: 
-  postgre-db:
+  postgres-db:
     image: postgres:13
     container_name: postgre-db
     environment:
