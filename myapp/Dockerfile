@@ -1,8 +1,8 @@
-FROM python:3.10.4
+FROM python:3.8
 
 WORKDIR /myapp
 
-COPY ./myapp/
+COPY . /myapp/
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
