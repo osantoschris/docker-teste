@@ -24,7 +24,7 @@ services:
       - postgres-db
     environment:
       - DB_NAME=postgres
-      - DB_USER=postrgres
+      - DB_USER=postgres
       - DB_PASSWORD=postgres
       - DB_HOST=postgres-db
       - DB_PORT=5432
