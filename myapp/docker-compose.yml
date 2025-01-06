@@ -1,15 +1,23 @@
-version: '3.9'
+version: '3.8'
 
 services: 
   web:
     build: .
     container_name: django_app
     command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-      - .:/myapp
     ports:
       - "8000:8000"
     depends_on:
       - postgres-db
     environment:
-      - DATABASE_URL=postgres://postgres:postgres@192.168.3.41:5432/postgres
+      - DB_NAME=postgres
+      - DB_USER=postrgres
+      - DB_PASSWORD=postgres
+      - DB_HOST=postgres-db
+      - DB_PORT=5432
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    external: true
