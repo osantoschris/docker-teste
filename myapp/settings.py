@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-j_*qfs&_*poenl8quu0t0)3d#8^20a)4_(ivg%&y$plsvckqnc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.3.41', 'localhost', '127.0.0.1', 'sought-goldfish-wrongly.ngrok-free.app']
+ALLOWED_HOSTS = ['192.168.3.41', 'localhost', '127.0.0.1']
 
 # Application definition
 
